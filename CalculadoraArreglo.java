@@ -17,13 +17,17 @@ public class CalculadoraArreglo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int op;
+
+        do{
+            
         Scanner opcion = new Scanner(System.in);
         double[] elementos = {20.5, 40.6, 78.4, 94.7, 55.3, 22.6, 84.3};
         System.out.println("Bienevenido a la calculadora con arreglos, elige una opcion");
         System.out.println("1. SUMAR EL ARREGLO");
         System.out.println("2. MULTIPLICAR EL ARREGLO");
         System.out.println("3. SALIR");
-        int op = opcion.nextInt();
+        op = opcion.nextInt();
         switch (op) {
             case 1:
                 double suma = 0;
@@ -49,6 +53,6 @@ public class CalculadoraArreglo {
                 break;
 
         }
-    }
+    }while(op != 3);
 
 }
